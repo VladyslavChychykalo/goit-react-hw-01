@@ -1,10 +1,11 @@
 import React, { Fragment } from 'react';
 import Profile from './Profile';
 import Stats from './Stats';
-// import PricingPlan from './PricingPlan';
-// import pricingPlanItems from '../path/to/pricing-plan.json';
-// import TransactionHistory from './TransactionHistory';
-// import transactions from '../path/to/transactions.json';
+import PricingPlan from './PricingPlan';
+import PricingItem from './PricingItem';
+import pricingPlanItems from '../path/to/pricing-plan.json';
+import TransactionHistory from './TransactionHistory';
+import transactions from '../path/to/transactions.json';
 
 const user = {
   name: 'Vladyslav Chychykalo',
@@ -31,7 +32,10 @@ const App = () => (
     <Profile user={user} />
     <Stats title="Upload stats" stats={stats} />
     {/* <PricingPlan items={pricingPlanItems} /> */}
-    {/* <TransactionHistory items={transactions} /> */}
+    <PricingPlan>
+      <PricingItem items={pricingPlanItems} />
+    </PricingPlan>
+    <TransactionHistory items={transactions} />
   </Fragment>
 );
 

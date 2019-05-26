@@ -1,30 +1,24 @@
-// import React from 'react';
+import React from 'react';
 
-// const TransactionHistory = ({ items }) => (
-//   <table class="transaction-history">
-//     <thead>
-//       {JSON.parse(items).map(el => (
-//         <tr key={el.id}>
-//           <th>{el.type}</th>
-//           <th>{el.amount}</th>
-//           <th>{el.currency}</th>
-//         </tr>
-//       ))}
-//     </thead>
+const TransactionHistory = ({ items }) => (
+  <table class="transaction-history">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Amount</th>
+        <th>Currency</th>
+      </tr>
+    </thead>
+    <tbody>
+      {items.map(el => (
+        <tr key={el.id}>
+          <td>{el.type}</td>
+          <td>{el.amount}</td>
+          <td>{el.currency}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+);
 
-//     <tbody>
-//       <tr>
-//         <td>Invoice</td>
-//         <td>125</td>
-//         <td>USD</td>
-//       </tr>
-//       <tr>
-//         <td>Withdrawal</td>
-//         <td>85</td>
-//         <td>USD</td>
-//       </tr>
-//     </tbody>
-//   </table>
-// );
-
-// export default TransactionHistory;
+export default TransactionHistory;

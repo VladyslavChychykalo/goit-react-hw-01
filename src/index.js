@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
-// import Profile from './components/Profile';
-// import Stats from './components/Stats';
-// import TransactionHistory from './components/TransactionHistory';
 
 // ============================================================ Элементы
 
