@@ -1,14 +1,21 @@
-const PricingItem = prop => (
-  <div class="pricing-item">
-    <i class="icon" />
-    <h2 class="label">Bronze</h2>
-    <p class="capacity">2TB Storage</p>
-    <p class="description">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde explicabo
-      quidem iste! Neque, tempore provident? Minus deleniti quia aspernatur,
-      dolor id enim eos nostrum repellendus quas provident minima ad blanditiis!
-    </p>
-    <p class="price">$39/MO</p>
-    <button class="button">Get Started</button>
-  </div>
-);
+// import React from 'react';
+// import PropTypes from 'prop-types';
+
+// const PricingPlan = prop => (
+//   <ul className="pricing-plan">
+//     {JSON.parse(prop).map(el => (
+//       <li className="item">
+//         <div className="pricing-item">
+//           <i className="icon">{el.icon}</i>
+//           <h2 className="label">{el.label}</h2>
+//           <p className="capacity">{el.capacity}</p>
+//           <p className="description">{el.description}</p>
+//           <p className="price">${el.price}</p>
+//           <button className="button">Get Started</button>
+//         </div>
+//       </li>
+//     ))}
+//   </ul>
+// );
+
+// export default PricingPlan;

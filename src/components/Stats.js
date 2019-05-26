@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 const Stats = ({ title, stats }) => (
   <section className="stats-section">
     <h2 className="title">{title}</h2>
-
     <ul className="stat-list">
       {stats.map(el => (
         <li key={el.id} className="item">

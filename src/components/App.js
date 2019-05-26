@@ -1,7 +1,10 @@
 import React, { Fragment } from 'react';
 import Profile from './Profile';
 import Stats from './Stats';
+// import PricingPlan from './PricingPlan';
+// import pricingPlanItems from '../path/to/pricing-plan.json';
 // import TransactionHistory from './TransactionHistory';
+// import transactions from '../path/to/transactions.json';
 
 const user = {
   name: 'Vladyslav Chychykalo',
@@ -27,7 +30,8 @@ const App = () => (
   <Fragment>
     <Profile user={user} />
     <Stats title="Upload stats" stats={stats} />
-    {/* <TransactionHistory /> */}
+    {/* <PricingPlan items={pricingPlanItems} /> */}
+    {/* <TransactionHistory items={transactions} /> */}
   </Fragment>
 );
 
