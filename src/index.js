@@ -1,8 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import Profile from './components/Profile';
-import Stats from './components/Stats';
-import TransactionHistory from './components/TransactionHistory';
+import App from './components/App';
+// import Profile from './components/Profile';
+// import Stats from './components/Stats';
+// import TransactionHistory from './components/TransactionHistory';
 
 // ============================================================ Элементы
 
@@ -87,23 +88,5 @@ import TransactionHistory from './components/TransactionHistory';
 // );
 
 // ===============================================
-const user = {
-  name: 'Vladyslav Chychykalo',
-  tag: '@vladyslav',
-  location: 'Kiev, Ukraine',
-  avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/r_oy/128.jpg',
-  stats: {
-    followers: 5603,
-    views: 4827,
-    likes: 1308,
-  },
-};
 
-ReactDOM.render(
-  <Fragment>
-    <Profile user={user} />
-    <Stats />
-    <TransactionHistory />
-  </Fragment>,
-  document.getElementById('root'),
-);
+ReactDOM.render(<App />, document.getElementById('root'));
