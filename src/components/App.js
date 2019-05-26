@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import Profile from './Profile';
 import Stats from './Stats';
 import PricingPlan from './PricingPlan';
-import PricingItem from './PricingItem';
+// import PricingItem from './PricingItem';
 import pricingPlanItems from '../path/to/pricing-plan.json';
 import TransactionHistory from './TransactionHistory';
 import transactions from '../path/to/transactions.json';
@@ -31,10 +31,10 @@ const App = () => (
   <Fragment>
     <Profile user={user} />
     <Stats title="Upload stats" stats={stats} />
-    {/* <PricingPlan items={pricingPlanItems} /> */}
-    <PricingPlan>
+    {/* <PricingPlan>
       <PricingItem items={pricingPlanItems} />
-    </PricingPlan>
+    </PricingPlan> */}
+    <PricingPlan items={pricingPlanItems} />
     <TransactionHistory items={transactions} />
   </Fragment>
 );
