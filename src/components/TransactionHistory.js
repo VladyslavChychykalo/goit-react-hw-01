@@ -22,5 +22,3 @@ const TransactionHistory = ({ items }) => (
 );
 
 export default TransactionHistory;
-
-// Вебинар 1.42 домашняя работа номер 3 , деструктуризация объекта

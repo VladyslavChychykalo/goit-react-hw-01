@@ -1,9 +1,6 @@
 import React from 'react';
 import PricingItem from './PricingItem';
-
-// const PricingPlan = ({ children }) => (
-//   <ul className="pricing-plan">{children}</ul>
-// );
+import PropTypes from 'prop-types';
 
 const PricingPlan = ({ items }) => (
   <ul className="pricing-plan">
@@ -20,5 +17,13 @@ const PricingPlan = ({ items }) => (
     ))}
   </ul>
 );
+
+PricingPlan.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
+};
 
 export default PricingPlan;
