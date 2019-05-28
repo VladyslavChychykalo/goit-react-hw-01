@@ -1,14 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const PricingItem = ({
-  label,
-  icon,
-  capacity,
-  price,
-  description,
-  alt = 'icon',
-}) => (
+const PricingItem = ({ label, icon, capacity, price, description, alt }) => (
   <div className="pricing-item">
     <img src={icon} className="icon" alt={alt} />
     <h2 className="label">{label}</h2>
@@ -19,12 +12,17 @@ const PricingItem = ({
   </div>
 );
 
+PricingItem.defaultProps = {
+  alt: 'icon',
+};
+
 PricingItem.propTypes = {
   icon: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   capacity: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   description: PropTypes.string.isRequired,
+  alt: PropTypes.string,
 };
 
 export default PricingItem;
