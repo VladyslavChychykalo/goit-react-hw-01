@@ -9,7 +9,13 @@ const PricingPlan = ({ items }) => (
   <ul className="pricing-plan">
     {items.map(el => (
       <li key={el.label} className="item">
-        <PricingItem />
+        <PricingItem
+          label={el.label}
+          capacity={el.capacity}
+          description={el.description}
+          price={el.price}
+          icon={el.icon}
+        />
       </li>
     ))}
   </ul>
