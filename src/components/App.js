@@ -1,16 +1,17 @@
 import React, { Fragment } from 'react';
-import Profile from './Profile';
-import Stats from './Stats';
-import PricingPlan from './PricingPlan';
+import Profile from './Profile/Profile';
+import src from './Profile/img/01.jpg';
+import Stats from './Stats/Stats';
+import PricingPlan from './PricingPlan/PricingPlan';
 import pricingPlanItems from '../path/to/pricing-plan.json';
-import TransactionHistory from './TransactionHistory';
+import TransactionHistory from './TranscationHistory/TransactionHistory';
 import transactions from '../path/to/transactions.json';
 
 const user = {
   name: 'Vladyslav Chychykalo',
   tag: '@vladyslav',
   location: 'Kiev, Ukraine',
-  avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/r_oy/128.jpg',
+  avatar: src,
   stats: {
     followers: 5603,
     views: 4827,
