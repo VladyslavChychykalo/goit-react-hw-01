@@ -2,33 +2,32 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Profile.module.css';
 
-const Profile = ({ user }) =>
-  console.log(user) || (
-    <div className={styles.cardWrapper}>
-      <div className="description">
-        <img src={user.avatar} alt={user.alt} className={styles.avatar} />
-      </div>
-
-      <p className={styles.name}>{user.name}</p>
-      <p className={styles.tag}>{user.tag}</p>
-      <p className={styles.location}>{user.location}</p>
-
-      <ul className={styles.stats}>
-        <li className={styles.item}>
-          <span className={styles.label}>Followers </span>
-          <span className={styles.quantity}>{user.stats.followers}</span>
-        </li>
-        <li className={styles.item}>
-          <span className={styles.label}>Views </span>
-          <span className={styles.quantity}>{user.stats.views}</span>
-        </li>
-        <li className={styles.item}>
-          <span className={styles.label}>Likes </span>
-          <span className={styles.quantity}>{user.stats.likes}</span>
-        </li>
-      </ul>
+const Profile = ({ user }) => (
+  <div className={styles.cardWrapper}>
+    <div className="description">
+      <img src={user.avatar} alt={user.alt} className={styles.avatar} />
     </div>
-  );
+
+    <p className={styles.name}>{user.name}</p>
+    <p className={styles.tag}>{user.tag}</p>
+    <p className={styles.location}>{user.location}</p>
+
+    <ul className={styles.stats}>
+      <li className={styles.item}>
+        <span className={styles.label}>Followers </span>
+        <span className={styles.quantity}>{user.stats.followers}</span>
+      </li>
+      <li className={styles.item}>
+        <span className={styles.label}>Views </span>
+        <span className={styles.quantity}>{user.stats.views}</span>
+      </li>
+      <li className={styles.item}>
+        <span className={styles.label}>Likes </span>
+        <span className={styles.quantity}>{user.stats.likes}</span>
+      </li>
+    </ul>
+  </div>
+);
 
 Profile.defaultProps = {
   user: {

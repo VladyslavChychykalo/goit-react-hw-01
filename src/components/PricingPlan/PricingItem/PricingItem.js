@@ -19,7 +19,9 @@ const PricingItem = ({ label, icon, capacity, price, description }) => (
     <p className={styles.capacity}>{capacity}</p>
     <p className={styles.description}>{description}</p>
     <p className={styles.price}>${price}</p>
-    <button className={styles[`${label}Button`]}>Get Started</button>
+    <button type="button" className={styles[`${label}Button`]}>
+      Get Started
+    </button>
   </div>
 );
 
@@ -29,7 +31,6 @@ PricingItem.propTypes = {
   capacity: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   description: PropTypes.string.isRequired,
-  alt: PropTypes.string,
 };
 
 export default PricingItem;
