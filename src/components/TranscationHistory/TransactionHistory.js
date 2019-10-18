@@ -17,12 +17,8 @@ const TransactionHistory = ({ items }) => (
           <td className={[styles.td, styles.capitalize].join(' ')}>
             {el.type}
           </td>
-          <td className={[styles.td, styles.capitalize].join(' ')}>
-            {el.amount}
-          </td>
-          <td className={[styles.td, styles.capitalize].join(' ')}>
-            {el.currency}
-          </td>
+          <td className={styles.td}>{el.amount}</td>
+          <td className={styles.td}>{el.currency}</td>
         </tr>
       ))}
     </tbody>
